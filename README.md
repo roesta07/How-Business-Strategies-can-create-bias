@@ -35,9 +35,9 @@ So, what just happened; the Model is not wrong it did its job but the causal int
 
 This is one of the possible dags which could be true.
 We can project our DAG as a series of implied functional relationships. The DAG above implies that: 
-- R is some function of C and U 
-- C is some function of G, P, and U 
-- G and U are not functions of any other known variables.<br/>
+- Retail Sales(R) is some function of Campaign(C) and an Unobserved Variable(U) 
+- Profit(P) is some function of Campaign(C), Retail Sales(R), and an Unobserved Variable(U) 
+- Campaign(C) and an Unobserved Variable(U) are not functions of any other known variables.<br/>
 
 Our Retail Sales and Profit must have been affected by some unmeasured Variable, thus creating a bias. This kind of bias has the name Collider Bias in the industry and is caused by conditioning on a common consequence.
 
