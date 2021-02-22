@@ -24,3 +24,27 @@ But anyway let’s run the model to see the bigger picture<br/>
 &nbsp;&nbsp;&nbsp;- Profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Profit](https://latex.codecogs.com/png.latex?profit%5Csim%20Normal%28mu%2Csigma%29)<br/>
 
 
+To our surprise; our Model is quite sure that the association between campaign and profit is negative once we know Retail Sales as we were expecting a spurious association. We could interpret that every penny spent on the campaign is not only ineffective but it's hurting our profit
+
+
+### Intuition
+This can be true but most of the time Marketing campaigns are designed to increase sales rather than hurt profits. If we report this to the company; the marketing agencies or department responsible for this marketing campaign is going to yell at us and we cannot say anything back because we would be wrong.
+
+
+So, what just happened; the Model is not wrong it did its job but the causal interpretation of that association would be. The association was wrong because our Directed Acyclic Graph(DAG) is incomplete and possibly that our DAG is haunted.
+
+This is one of the possible dags which could be true.
+We can project our DAG as a series of implied functional relationships. The DAG above implies that: 
+- R is some function of C and U 
+- C is some function of G, P, and U 
+- G and U are not functions of any other known variables.<br/>
+
+Our Retail Sales and Profit must have been affected by some unmeasured Variable, thus creating a bias. This kind of bias has the name Collider Bias in the industry and is caused by conditioning on a common consequence.
+
+## Strategy As an Unmeasured Variable.
+A Business has to make a lot of strategies thus increasing the chance of biased interpretation. One of the main Culprits for biased interpretation and analysis in business is failing to consider the effects of strategies. But as an analyst; especially outsourced one are unaware of these company strategies which can create biased inferences. 
+Here in this project the company recently opened new retail Stores at new regions but the campaign was targeted to all regions including old. And since the company has added new stores it has strategized for new stores by compromising margins, adding region-specefic services, and attractions. Which then affected Sales and Profit.
+And What else could be best other than to include Regions(New and Old) to get the effect of Strategies. Well, you could have also included area-specific-Margins, Cost, and other strategy-related variables; but adding Regions includes all the added effects ot the strategy as the strategy was region-specific.
+
+
+But business problems are not this simple. It takes iterations and testing different cases, scenarios, and reasoning. Plus cause and effect are harder to detect with empirical studies with direct observational data. We could have never solved this inference without intuition and the help of DAGs.
