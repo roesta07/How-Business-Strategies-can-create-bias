@@ -21,12 +21,13 @@ But this company has no other sales channels except for retail sales. Therefore,
 
 But anyway let’s run the model to see the bigger picture<br/>
 
+## Model
 *Model Assumtions with it's Mathematical Notations:*<br/>
 <br/>
 &nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C1%29)<br/>
 &nbsp;&nbsp;&nbsp;- Beta(Retail Sales)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(Retail Sales)](https://latex.codecogs.com/png.latex?b_R%20%5Csim%20Normal%280%2C1%29)<br/>
-&nbsp;&nbsp;&nbsp;- Beta(Campaign)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(Campaign)](https://latex.codecogs.com/png.latex?b_CP%20%5Csim%20Normal%280%2C1%29)<br/>
-&nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/png.latex?mu%20%3Da&plus;b_RP*R%28std%29&plus;b_C*C%28std%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(Campaign)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(Campaign)](https://latex.codecogs.com/png.latex?b_C_P%20%5Csim%20Normal%280%2C1%29)<br/>
+&nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/png.latex?mu%20%3Da&plus;b_R_P*R%28std%29&plus;b_C*C%28std%29)<br/>
 &nbsp;&nbsp;&nbsp;- Profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Profit](https://latex.codecogs.com/png.latex?profit%5Csim%20Normal%28mu%2Csigma%29)<br/>
 
 ## Model Summary
