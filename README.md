@@ -12,7 +12,7 @@ The dataset we will be working with is a Marketing Campaign report with daily ca
 * Region - (categorical)
 
 ### This can be further explained with the help of Directed Acyclic Graph(DAG)
-<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/dag1.png?raw=true" width="820" height="312">
+<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/dag1.png?raw=true" width="820">
 
 Naturally, as an analyst, we would want to find the direct effect of the campaign to profit. Or a residual effect of the campaign to profit after controlling for Retail sales. As companies can make a profit from other sources too except for Retail Sales; Also marketing campaigns usually increase sales on other platforms too. For example; A campaign targeted to increase retail sales can also increase online sales during the same campaign period.
 
@@ -31,12 +31,12 @@ But anyway let’s run the model to see the bigger picture<br/>
 &nbsp;&nbsp;&nbsp;- Profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Profit](https://latex.codecogs.com/png.latex?profit%5Csim%20Normal%28mu%2Csigma%29)<br/>
 
 ## Model Summary
-<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/summary-05.png?raw=true" width="820" height="312">
+<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/summary-05.png?raw=true" width="820">
 
 To our surprise; our Model is quite sure that the association between campaign and profit is negative once we know Retail Sales. We could interpret that every penny spent on the campaign is not only ineffective but it's hurting our profit.
 We can take a deeper look with the plot below:
 
-<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/grph1.png?raw=true" width="820" height="312">
+<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/grph1.png?raw=true" width="820" >
 
 ### Intuition Block >>
 This can be true but most of the time Marketing campaigns are designed to increase sales rather than hurt profits. If we report this to the company; the marketing agencies or department responsible for this marketing campaign is going to yell at us and we cannot say anything back because we would be wrong.
@@ -46,7 +46,7 @@ This can be true but most of the time Marketing campaigns are designed to increa
 
 So, what just could have happened; the Model is not wrong it did its job but the causal interpretation of that association would be. The association was wrong because our Directed Acyclic Graph(DAG) is incomplete and there are possibly that our DAG is haunted.
 
-<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/dag2.png?raw=true" width="820" height="312">
+<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/dag2.png?raw=true" width="820" >
 
 
 This is one of the possible dags which could be true.
@@ -58,7 +58,7 @@ We can project our DAG as a series of implied functional relationships. The DAG 
 Our Retail Sales and Profit must have been affected by some unmeasured Variable, thus creating a bias. This kind of bias has the name as "Collider Bias" in the industry and is caused by conditioning on a common consequence.
 
 ## Strategy As an Unmeasured Variable
-<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/dag3.png?raw=true" width="820" height="312">
+<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/dag3.png?raw=true" width="820">
 
 A Business has to make a lot of strategies thus increasing the chance of biased interpretation. One of the main Culprits for biased interpretation and analysis in business is failing to consider the effects of strategies. But as an analyst; especially if one is outsourced he/she is unaware of these company strategies which can create biased inferences. 
 
@@ -66,7 +66,7 @@ Here in this project the company recently opened new retail Stores at new region
 
 And What else could be best other than to include Regions(New and Old) to get the effect of Strategies. Well, you could have also included area-specific-Margins, Cost, and other strategy-related variables; but adding Regions includes all the added effects ot the strategy as the strategy was region-specific.
 
-<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/grph2.png?raw=true" width="820" height="312">
+<img src="https://github.com/roesta07/How-Business-Strategies-can-create-bias/blob/main/img/grph2.png?raw=true" width="820" >
 
 
 ## So what can we get out of this??
