@@ -7,8 +7,8 @@ Sometimes Business Strategies can create bias. If we are after the causal relati
 The dataset we will be working with is a Marketing Campaign report with daily campaign spending, daily closing retail sales, and Daily Closing Profit at a company’s different retail stores around the nation over few weeks.
 
 * Campaign Spendings - (in standard unit)
-* Retail Sales - (proportion of standard unit)
-* Profit Sales - (proportion of standard unit)
+* Retail Sales - (effect of some proportion)
+* Profit Sales - (effect of some proportion)
 * Region - (categorical)
 
 ### This can be further explained with the help of Directed Acyclic Graph(DAG)
